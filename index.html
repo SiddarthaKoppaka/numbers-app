@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Arithmetic App</title>
+</head>
+<body>
+<h1>Arithmetic</h1>
+<div>
+    <input type="number" id="number1" placeholder="Enter first number">
+    <span>+</span>
+    <input type="number" id="number2" placeholder="Enter second number">
+    <button onclick="calculateSum()">=</button>
+    <span id="result"></span>
+</div>
+
+<script>
+function calculateSum() {
+    var num1 = parseInt(document.getElementById('number1').value);
+    var num2 = parseInt(document.getElementById('number2').value);
+    var sum = num1 + num2;
+    document.getElementById('result').textContent = sum;
+}
+</script>
+</body>
+</html>
