@@ -84,7 +84,7 @@
          async function caesarEncode() {
         const cipherText = document.getElementById("cipherTest");            
         let n = cipherText.value;            
-        const cresponse = await fetch("https://ciphers-service-npau.onrender.com/ciphers/caesar/"+ n +"/3");
+        const cresponse = await fetch("https://ciphers-service-siddarthakoppaka.onrender.com/ciphers/caesar/"+ n +"/3");
         const cresult = await cresponse.json();
         document.getElementById("cipherResult").innerHTML = cresult.cipher}
     </script>
