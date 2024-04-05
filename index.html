@@ -39,6 +39,7 @@
                 <input id="numberToTest"/>
                 <button onclick="isPrime()">Check</button>
                 <label id="primeCheckResult"></label>  
+<<<<<<< HEAD
             </section>           
         </div>
         <div class="column">
@@ -50,6 +51,20 @@
                 <label id="cipher"></label>  
             </section>           
         </div>        
+=======
+            </section>
+        <div class="column">
+            <section>
+                <h2>Caesar Cipher</h2>                
+                <label>Text:</label>
+                <input id="cipherTest"/>
+                <button onclick="caesarEncode()">Cipher</button>
+                <label id="cipherResult"></label> 
+                <p id="cipher_ans"></p>
+            </section> 
+                   
+        </div>       
+>>>>>>> 749a0b87252e0d5ed29098a10bdc667a45865c87
      </div>
     
    
@@ -75,6 +90,17 @@
             const result = await response.json();
             document.getElementById("primeCheckResult").innerText = result;
         }
+<<<<<<< HEAD
+=======
+
+         async function caesarEncode() {
+        const cipherText = document.getElementById("cipherTest");            
+        let n = cipherText.value;            
+        const cresponse = await fetch("https://ciphers-service-siddarthakoppaka.onrender.com/ciphers/caesar/"+ n +"/3");
+        const cresult = await cresponse.json();
+        document.getElementById("cipherResult").innerHTML = cresult.cipher}
+    </script>
+>>>>>>> 749a0b87252e0d5ed29098a10bdc667a45865c87
 
         async function cipher() {
             const numberToTest = document.getElementById("textToCipher");            
